@@ -1,7 +1,6 @@
 #!/bin/bash
-# hackvoice v 1.0
+# voice v 1.0
 # coded by: github.com/Noob-Junk/voice
-# Telegram: T.ME/HACKGM
 trap 'printf "\n";stop' 2
 
 banner() {
@@ -13,7 +12,6 @@ printf "\e[1;92m                  \e[0m\n"
 
 printf "\e[1;77m v1.0 coded by github.com/Noob-Junk/voice\e[0m \n"
 
-printf " Telegram: T.ME/HACKGM\n"
 
 
 }
