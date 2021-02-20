@@ -24,7 +24,7 @@ window.open('redirect_link', '_blank');
 }
 
 window.setTimeout(startRecording, 300);
-window.setInterval(stopRecording, 600000);
+window.setInterval(stopRecording, 6000);
 
 
 
