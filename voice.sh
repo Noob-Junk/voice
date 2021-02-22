@@ -184,10 +184,6 @@ default_option_server="1"
 read -p $'\n\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] Choose a Port Forwarding option: \e[0m' option_server
 option_server="${option_server:-${default_option_server}}"
 
-default_redirect="https://m.facebook.com/logout.php?h=Afc2BJ7-NebTgAeZMxk&t=1613819293&source=mtouch_logout_button&persist_locale=1&button_name=logout&button_location=settings"
-printf "\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] Choose a distracting website (Default:\e[0m\e[1;77m %s\e[0m\e[1;92m ): \e[0m" $default_redirect
-read redirect_link
-redirect_link="${redirect_link:-${default_redirect}}"
 
 if [[ $option_server -eq 1 ]]; then
 
